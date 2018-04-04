@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form>
+        <div class="form-group">
+          <fieldset>
+
+            <legend>
+              <h1 class="heading-large">
+                What would you like to subscribe to?
+              </h1>
+            </legend>
+
+            <div class="multiple-choice" data-target="contact-by-email">
+              <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+              <label for="example-contact-by-email">Updates to a specific country</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+              <label class="form-label" for="contact-email">Search for a country</label>
+              <input class="form-control" name="contact-email" type="text" id="contact-email">
+              <p><a href="">Add another country</a></p>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-phone">
+              <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-phone">Updates to a group of countries</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-phone">
+              <label class="form-label" for="contact-phone">Search for a group of countries</label>
+              <input class="form-control" name="contact-phone" type="text" id="contact-phone">
+              <p><a href="">Add another group of countries</a></p>
+            </div>
+
+            <div class="multiple-choice" data-target="contact-by-text">
+              <input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
+              <label for="example-contact-by-text">Updates to all countries</label>
+            </div>
+            <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
+              <p>Subscribing to updates to all countries means you will get an email every time information about a country is updated, so you'll get about 50 emails every week.</p>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
