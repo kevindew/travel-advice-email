@@ -21,22 +21,29 @@
 
             <div class="multiple-choice" data-target="contact-by-email">
               <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
-              <label for="example-contact-by-email">Updates to a specific country</label>
+              <label for="example-contact-by-email">Updates to a specific country or territory</label>
             </div>
             <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
-              <label class="form-label" for="contact-email">Select your country</label>
+              <label class="form-label" for="contact-email">Search for a country or territory</label>
               <div id="my-autocomplete-container">
                 <input class="form-control" name="contact-email" type="text" id="contact-email">
               </div>
-              <p><a href="">Add another country</a></p>
+              <br>
+              <p>Based on your selection, you might also want to follow updates on the following countries:</p>
+              <ul class="list">
+                <li><a href="#">Denmark</a></li>
+                <li><a href="#">Norway</a></li>
+                <li><a href="#">Sweden</a></li>
+                <li><a href="#">Finland</a></li>
+                <li><a href="">Search for another</a></li>
+              </ul>
             </div>
-
             <div class="multiple-choice" data-target="contact-by-text">
               <input id="example-contact-by-text" type="radio" name="radio-contact-group" value="No">
-              <label for="example-contact-by-text">Updates to all countries</label>
+              <label for="example-contact-by-text">Updates to all countries and territories</label>
             </div>
             <div class="panel panel-border-narrow js-hidden" id="contact-by-text">
-              <p>Subscribing to updates to all countries means you will get an email every time information about a country is updated, so you'll get about 50 emails every week.</p>
+              <p>You'll get an email each time a country is updated. You could get around 50 emails a week.</p>
             </div>
 
           </fieldset>
